@@ -1,0 +1,88 @@
+.contianer{
+    max-width: 860px;
+    margin: 0 auto;
+}
+input{
+    appearance: none;
+}
+.form__label__kvatrat{
+    position: absolute;
+    left: -20px;
+    width: 23px;
+    height: 23px;
+    
+    border: 1px solid black;
+}
+.form__label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+}
+.form__label__input:checked ~ .Stol_tennisi{
+    background: url(../img/table-tennis.png) no-repeat;opacity: 0.5;
+    
+}
+.form__label__input:checked ~ .Basketbol{
+    background: url(../img/basketball-ball.png) no-repeat;opacity: 0.5;
+    
+}
+.form__label__input:checked ~ .Voleybol{
+    background: url(../img/volleyball-ball.png) no-repeat;opacity: 0.5;
+    
+}
+.form__label__input:checked ~ .Hakkey{
+    background: url(../img/hockey-puck.png) no-repeat;opacity: 0.5;
+    
+}
+.form__label__input ~ .Hakkey2{
+    background: url(../img/hockey-puck.png) no-repeat;opacity: 0.5;
+    
+}
+.form__label__input:checked +div{
+    color: #797979;
+    
+    
+}
+.form__label__input:checked ~.form__label__kvatrat{
+    border: 1px solid #797979;
+}
+.Hakkey1{
+    
+    border: 1px solid #797979;
+}
+.Hakkey2{
+    color: #797979;
+    border: 1px solid #797979;
+    opacity: 0.5;
+}
+.Hakkey11{
+    color: #797979;
+    opacity: 0.5;
+}
+input[type="file"]{
+    display: none;
+}
+.form__label__file{
+    width: 140px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: inset 0 0 10px 2px black;
+}
+.form__button{
+    width: 80px;
+    padding: 5px;
+    position: relative;
+    left: 200px;
+    top: 100px;
+    border-radius: 5px;
+    background-color: slategray;
+    font-size: 22px;
+    margin: 0 auto;
+    -webkit-box-shadow: 9px 1px 10px black;
+    box-shadow: 9px 1px 10px black;
+}
